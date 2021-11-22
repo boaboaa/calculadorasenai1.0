@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body onkeypress="apertouTecla(event)">
+
+    <nav>
+        <a href="front.html" target="_blank" class="selecionada">Clássico</a>
+        <a href="equacaodois.html" target="_blank">Equações dois pontos</a>
+        <a href="distanciapr.html" target="_blank">Distância ponto e reta</a>
+        <a href="equacaored.html" target="_blank">Equação reduzida</a>
+        <a href="posicaorel.html" target="_blank">Posição relativa das retas</a>
+    </nav>
+
+</nav>
+<div class="Calculadora">
+    <input type="text" disabled class="display" id="display">
+    <div class="primeiros-botoes">
+        <button onclick="limpar()">LIMPAR</button>
+        <button onclick="backspace()">«</button>
+        <button onclick="selecionarOperacao('/')">/</button>
+    </div>
+    <div class="botoes-centrais">
+     <button onclick="inserirNumero('7')">7</button>
+     <button onclick="inserirNumero('8')">8</button>
+     <button onclick="inserirNumero('9')">9</button>
+     <button onclick="selecionarOperacao('*')">*</button>
+     <button onclick="inserirNumero('4')">4</button>
+     <button onclick="inserirNumero('5')">5</button>
+     <button onclick="inserirNumero('6')">6</button>
+     <button onclick="selecionarOperacao('-')">-</button>
+     <button onclick="inserirNumero('1')">1</button>
+     <button onclick="inserirNumero('2')">2</button>
+     <button onclick="inserirNumero('3')">3</button>
+     <button onclick="selecionarOperacao('+')">+</button>
+
+    </div>
+    <div class="ultimos-botoes">
+     <button onclick="inserirNumero('0')">0</button>
+     <button onclick="decimals()">.</button>
+     <button onclick="equals()">=</button>
+    </div>
+
+    <script src="back.js"></script>
+</body>
+</html>
